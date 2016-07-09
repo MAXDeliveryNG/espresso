@@ -1,0 +1,24 @@
+{
+  "name": "espresso",
+  "homepage": "https://github.com/ojengwa/espresso",
+  "authors": [
+    "Bernard Ojengwa <bernardojengwa@gmail.com>"
+  ],
+  "description": "Style guide and style framework for all brand solutions products at Max NG.",
+  "main": "",
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "keywords": ["css", "sass", "style", "grid", "flat", "website", "design", "frontend", "lightweight front end"],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

@@ -30,7 +30,8 @@
     "tests"
   ],
   "dependencies": {
-    "font-awesome": "^4.6.3"
+    "font-awesome": "^4.6.3",
+    "bootstrap": "^3.3.6"
   },
   "devDependencies": {
     "bootstrap-sass": "^3.3.6"

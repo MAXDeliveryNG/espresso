@@ -16,5 +16,5 @@ Style guide and style framework for all brand solutions products at Max NG.!
 ## Customization
 Change variables in variables.scss and run
 ```
-sass --watch sass/main.scss:css/style.css
+sass --watch assets/sass/main.scss:assets/css/style.css
 ```

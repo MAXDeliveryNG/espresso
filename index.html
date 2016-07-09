@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="css, sass, style, grid, flat, website, design, open source, lightweight front end">
+  <meta name="description" content="An open source lightweight css framework for website styling, avaliable in css and sass.">
+  <meta name="author" content="Yan Hong">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Open Style | Another lightweight open source CSS framework</title>
+</head>
+<body>
+  <div class="col-1of5 white-bg full-height fix">
+    <h4 class="margin-l1">Menu</h4>
+      <hr class="white-bd-d">
+      <h6 class="margin-l1"><a href="#install">Installation</a></h6>
+      <hr class="white-bd-d">
+      <h6 class="margin-l1"><a href="#bg-color">Background Color</a></h6>
+      <hr class="white-bd-d">
+      <h6 class="margin-l1"><a href="#txt-color">Text Color</a></h6>
+      <hr class="white-bd-d">
+      <h6 class="margin-l1"><a href="#font">Font</a></h6>
+      <hr class="white-bd-d">
+      <h6 class="margin-l1"><a href="#grid">Grid System</a></h6>
+      <hr class="white-bd-d">
+      <h6 class="margin-l1"><a href="#position">Position Helpers</a></h6>
+      <hr class="white-bd-d">
+      <h6 class="margin-l1"><a href="#button">Buttons</a></h6>
+      <hr class="white-bd-d">
+      <h6 class="margin-l1"><a href="#form">Form</a></h6>
+      <hr class="white-bd-d">
+      <h6 class="margin-l1"><a href="#components">Components</a></h6>
+      <hr class="white-bd-d">
+  </div>
+  <div class="col-4of5 push-1of5 shadow-l">
+    <h1 class="margin-l1 pull-left">Open Style Documentation <span class="txt-s light grey-txt">version 1.2</span></h1>
+    <a class="button-sec pull-right margin-t2r2" href="https://github.com/hongyanh/open-style.git" target="_blank">GitHub Source</a>
+    <a class="button-pri pull-right margin-t2r2" href="css/style.css" target="_blank" download>Download CSS</a>
+    <div class="clear-float"></div>
+    <div class="padding-1">
+      <h3 id="install">Installation</h3>
+      <h6>CSS version</h6>
+      <p>1. <a href="css/normalize.css" target="_blank" download>Download</a> the normalize.css, put it in your /css folder and reference in your html:</p>
+      <pre><code>&lt;link rel="stylesheet" type="text/css" href="css/normalize.css"&gt;</code></pre>
+      <p>2. <a href="css/style.css" target="_blank" download>Download</a> the all-in-one css version, put it in your /css folder and reference in your html:</p>
+      <pre><code>&lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;</code></pre>
+      <h6>SASS version</h6>
+      <p>1. Go to the <a href="https://github.com/hongyanh/open-style.git" target="_blank">github repository</a> and download the source code;</p>
+      <p>2. In the /sass/main.scss file, comment out the style you do not need (you have to keep variables and helpers);</p>
+      <p>3. In the /sass/variables.scss file, change the variables to your own design such as color, font size, border radius, etc.</p>
+      <p>4. Install SASS and compile /sass/main.scss into style.css</p>
+      <p>5. Enjoy your style!</p>
+    </div>
+    <div class="padding-1">
+      <h3 id="bg-color">Background Color</h3>
+      <div class="col-1of3 pri-bg-l white-txt padding-1">.pri-bg-l</div>
+      <div class="col-1of3 pri-bg white-txt padding-1">.pri-bg</div>
+      <div class="col-1of3 pri-bg-d white-txt padding-1">.pri-bg-d</div>
+      <div class="col-1of3 sec-bg-l white-txt padding-1">.sec-bg-l</div>
+      <div class="col-1of3 sec-bg white-txt padding-1">.sec-bg</div>
+      <div class="col-1of3 sec-bg-d white-txt padding-1">.sec-bg-d</div>
+      <div class="col-1of3 ter-bg-l white-txt padding-1">.ter-bg-l</div>
+      <div class="col-1of3 ter-bg white-txt padding-1">.ter-bg</div>
+      <div class="col-1of3 ter-bg-d white-txt padding-1">.ter-bg-d</div>
+      <div class="col-1of3 black-bg-l white-txt padding-1">.black-bg-l</div>
+      <div class="col-1of3 black-bg white-txt padding-1">.black-bg</div>
+      <div class="col-1of3 black-bg-d white-txt padding-1">.black-bg-d</div>
+      <div class="col-1of3 white-bg-l padding-1">.white-bg-l</div>
+      <div class="col-1of3 white-bg padding-1">.white-bg</div>
+      <div class="col-1of3 white-bg-d black-txt padding-1">.white-bg-d</div>
+    </div>
+    <div class="clear-float"></div>
+    <div class="padding-1">
+      <h3 id="txt-color">Text Color</h3>
+      <div class="col-1of3 pri-txt-l padding-1 semi">.pri-txt-l</div>
+      <div class="col-1of3 pri-txt padding-1 semi">.pri-txt</div>
+      <div class="col-1of3 pri-txt-d padding-1 semi">.pri-txt-d</div>
+      <div class="col-1of3 sec-txt-l padding-1 semi">.sec-txt-l</div>
+      <div class="col-1of3 sec-txt padding-1 semi">.sec-txt</div>
+      <div class="col-1of3 sec-txt-d padding-1 semi">.sec-txt-d</div>
+      <div class="col-1of3 ter-txt-l padding-1 semi">.ter-txt-l</div>
+      <div class="col-1of3 ter-txt padding-1 semi">.ter-txt</div>
+      <div class="col-1of3 ter-txt-d padding-1 semi">.ter-txt-d</div>
+      <div class="col-1of3 black-txt-l padding-1 semi">.black-txt-l</div>
+      <div class="col-1of3 black-txt padding-1 semi">.black-txt</div>
+      <div class="col-1of3 black-txt-d padding-1 semi">.black-txt-d</div>
+      <div class="col-1of3 white-txt-l padding-1 semi black-bg">.white-txt-l</div>
+      <div class="col-1of3 white-txt padding-1 semi black-bg">.white-txt</div>
+      <div class="col-1of3 white-txt-d padding-1 semi black-bg">.white-txt-d</div>
+    </div>
+    <div class="clear-float"></div>
+    <div class="padding-1">
+      <h3 id="font">Font</h3>
+      <div class="col-2of5-g">
+        <h1 class="clear-margin-t">h1 : Heading 1</h1>
+        <h2>h2 : Heading 2</h2>
+        <h3>h3 : Heading 3</h3>
+        <h4>h4 : Heading 4</h4>
+        <h5>h5 : Heading 5</h5>
+        <h6>h6 : Heading 6</h6>
+      </div>
+      <div class="col-1of5-g">
+        <h4 class="extra clear-margin-t">.extra</h4>
+        <h4 class="bold">.bold</h4>
+        <h4 class="semi">.semi</h4>
+        <h4 class="normal">.normal</h4>
+        <h4 class="light">.light</h4>
+      </div>
+      <div class="col-2of5-g">
+        <p class="txt-s">p .txt-s : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae culpa eaque adipisci in nam necessitatibus voluptates repellendus asperiores quas dolores blanditiis vitae laudantium, nesciunt saepe nobis architecto distinctio harum molestiae!</p>
+        <p class="txt-m">p .txt-m : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae culpa eaque adipisci in nam necessitatibus voluptates repellendus asperiores</p>
+        <p class="txt-l">p .txt-l : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae culpa eaque</p>
+      </div>
+    </div>
+    <div class="clear-float"></div>
+    <div class="padding-1">
+      <h3 id="grid">Grid System</h3>
+      <p>* Note1: add .clear-float if you want to start with a new line.</p>
+      <p>* Note2: you can nest the grid system and get more column types.</p>
+      <div class="col-1of1 padding-1 white-bg-d white-bd">.col-1of1</div>
+      <div class="col-1of2 padding-1 white-bg-d white-bd">.col-1of2</div>
+      <div class="col-1of2 padding-1 white-bg-d white-bd">.col-1of2</div>
+      <div class="col-1of3 padding-1 white-bg-d white-bd">.col-1of3</div>
+      <div class="col-1of3 padding-1 white-bg-d white-bd">.col-1of3</div>
+      <div class="col-1of3 padding-1 white-bg-d white-bd">.col-1of3</div>
+      <div class="col-2of3 padding-1 white-bg-d white-bd">.col-2of3</div>
+      <div class="col-1of3 padding-1 white-bg-d white-bd">.col-1of3</div>
+      <div class="col-1of4 padding-1 white-bg-d white-bd">.col-1of4</div>
+      <div class="col-1of4 padding-1 white-bg-d white-bd">.col-1of4</div>
+      <div class="col-1of4 padding-1 white-bg-d white-bd">.col-1of4</div>
+      <div class="col-1of4 padding-1 white-bg-d white-bd">.col-1of4</div>
+      <div class="col-1of5 padding-1 white-bg-d white-bd">.col-1of5</div>
+      <div class="col-1of5 padding-1 white-bg-d white-bd">.col-1of5</div>
+      <div class="col-1of5 padding-1 white-bg-d white-bd">.col-1of5</div>
+      <div class="col-1of5 padding-1 white-bg-d white-bd">.col-1of5</div>
+      <div class="col-1of5 padding-1 white-bg-d white-bd">.col-1of5</div>
+      <div class="col-1of7 padding-1 white-bg-d white-bd">.col-1of7</div>
+      <div class="col-1of7 padding-1 white-bg-d white-bd">.col-1of7</div>
+      <div class="col-1of7 padding-1 white-bg-d white-bd">.col-1of7</div>
+      <div class="col-1of7 padding-1 white-bg-d white-bd">.col-1of7</div>
+      <div class="col-1of7 padding-1 white-bg-d white-bd">.col-1of7</div>
+      <div class="col-1of7 padding-1 white-bg-d white-bd">.col-1of7</div>
+      <div class="col-1of7 padding-1 white-bg-d white-bd">.col-1of7</div>
+      <div class="col-1of3 push-1of3 padding-1 white-bg-d white-bd">.col-1of3 .push-1of3</div>
+      <div class="col-1of3 push-2of3 padding-1 white-bg-d white-bd">.col-1of3 .push-2of3</div>
+      <div class="col-1of4 push-1of4 padding-1 white-bg-d white-bd">.col-1of4 .push-1of4</div>
+      <div class="col-1of4 push-1of2 padding-1 white-bg-d white-bd clear-float">.col-1of4 .push-1of2</div>
+      <div class="col-1of4 push-3of4 padding-1 white-bg-d white-bd">.col-1of4 .push-3of4</div>
+      <div class="col-1of5 push-1of5 padding-1 white-bg-d white-bd">.col-1of5 .push-1of5</div>
+      <div class="col-1of5 push-2of5 padding-1 white-bg-d white-bd clear-float">.col-1of5 .push-2of5</div>
+      <div class="col-1of5 push-3of5 padding-1 white-bg-d white-bd clear-float">.col-1of5 .push-3of5</div>
+      <div class="col-1of5 push-4of5 padding-1 white-bg-d white-bd clear-float">.col-1of5 .push-4of5</div>
+
+      <div class="col-1of7 push-1of7 padding-1 white-bg-d white-bd">.col-1of7 .push-1of7</div>
+      <div class="col-1of7 push-2of7 padding-1 white-bg-d white-bd clear-float">.col-1of7 .push-2of7</div>
+      <div class="col-1of7 push-3of7 padding-1 white-bg-d white-bd clear-float">.col-1of7 .push-3of7</div>
+      <div class="col-1of7 push-4of7 padding-1 white-bg-d white-bd clear-float">.col-1of7 .push-4of7</div>
+      <div class="col-1of7 push-5of7 padding-1 white-bg-d white-bd clear-float">.col-1of7 .push-5of7</div>
+      <div class="col-1of7 push-6of7 padding-1 white-bg-d white-bd clear-float">.col-1of7 .push-6of7</div>
+      <div class="col-1of1-g padding-1 white-bg-d white-bd">.col-1of1-g</div>
+      <div class="col-1of2-g padding-1 white-bg-d white-bd">.col-1of2-g</div>
+      <div class="col-1of2-g padding-1 white-bg-d white-bd">.col-1of2-g</div>
+      <div class="col-1of3-g padding-1 white-bg-d white-bd">.col-1of3-g</div>
+      <div class="col-1of3-g padding-1 white-bg-d white-bd">.col-1of3-g</div>
+      <div class="col-1of3-g padding-1 white-bg-d white-bd">.col-1of3-g</div>
+      <div class="col-2of3-g padding-1 white-bg-d white-bd">.col-2of3-g</div>
+      <div class="col-1of3-g padding-1 white-bg-d white-bd">.col-1of3-g</div>
+      <div class="col-1of4-g padding-1 white-bg-d white-bd">.col-1of4-g</div>
+      <div class="col-1of4-g padding-1 white-bg-d white-bd">.col-1of4-g</div>
+      <div class="col-1of4-g padding-1 white-bg-d white-bd">.col-1of4-g</div>
+      <div class="col-1of4-g padding-1 white-bg-d white-bd">.col-1of4-g</div>
+      <div class="col-1of5-g padding-1 white-bg-d white-bd">.col-1of5-g</div>
+      <div class="col-1of5-g padding-1 white-bg-d white-bd">.col-1of5-g</div>
+      <div class="col-1of5-g padding-1 white-bg-d white-bd">.col-1of5-g</div>
+      <div class="col-1of5-g padding-1 white-bg-d white-bd">.col-1of5-g</div>
+      <div class="col-1of5-g padding-1 white-bg-d white-bd">.col-1of5-g</div>
+      <div class="col-1of7-g padding-1 white-bg-d white-bd">.col-1of7-g</div>
+      <div class="col-1of7-g padding-1 white-bg-d white-bd">.col-1of7-g</div>
+      <div class="col-1of7-g padding-1 white-bg-d white-bd">.col-1of7-g</div>
+      <div class="col-1of7-g padding-1 white-bg-d white-bd">.col-1of7-g</div>
+      <div class="col-1of7-g padding-1 white-bg-d white-bd">.col-1of7-g</div>
+      <div class="col-1of7-g padding-1 white-bg-d white-bd">.col-1of7-g</div>
+      <div class="col-1of7-g padding-1 white-bg-d white-bd">.col-1of7-g</div>
+    </div>
+    <div class="clear-float"></div>
+    <div class="padding-1">
+      <h3 id="position">Position Helpers</h3>
+      <p class="pull-left white-bg-d padding-1">.pull-left</p>
+      <p class="pull-right white-bg-d padding-1">.pull-right</p>
+      <div class="clear-float"></div>
+      <div class="black-bd-l">
+        <p class="clear-all white-bg-d">.clear-all</p>
+      </div>
+      <div class="black-bd-l">
+        <p class="clear-margin margin-l2 white-bg-d">.clear-margin .margin-l2</p>
+      </div>
+      <div class="black-bd-l">
+        <p class="clear-margin margin-r2 white-bg-d">.clear-margin .margin-r2</p>
+      </div>
+      <div class="black-bd-l">
+        <p class="clear-margin margin-t2 white-bg-d">.clear-margin .margin-t2</p>
+      </div>
+      <div class="black-bd-l">
+        <p class="clear-margin margin-b2 white-bg-d">.clear-margin .margin-b2</p>
+      </div>
+      <div class="black-bd-l">
+        <p class="clear-padding margin-1 white-bg-d">.clear-padding .margin-1</p>
+      </div>
+      <div class="black-bd-l">
+        <p class="clear-margin padding-1 white-bg-d">.clear-margin .padding-1</p>
+      </div>
+      <div class="black-bd-l">
+        <p class="margin-1 padding-1 white-bg-d">.margin-1 .padding-1</p>
+      </div>
+    </div>
+    <div class="clear-float"></div>
+    <div class="padding-1">
+      <h3 id="button">Buttons</h3>
+      <div class="clear-float margin-t1b1">
+        <button>.button</button>
+        <button class="button-pri">.button-pri</button>
+        <button class="button-sec">.button-sec</button>
+        <button class="button-ter">.button-ter</button>
+        <button class="button-alert">.button-alert</button>
+        <button class="button outline">.button .outline</button>
+        <button class="button" disabled>.button :disabled</button>
+      </div>
+      <div class="clear-float margin-t1b1">
+        <button class="wide">.button .wide</button>
+        <button class="button-pri wide">.button-pri .wide</button>
+        <button class="button-sec wide">.button-sec .wide</button>
+        <button class="button-ter wide">.button-ter .wide</button>
+        <button class="button-alert wide">.button-alert .wide</button>
+        <button class="button outline wide">.button .outline .wide</button>
+        <button class="button wide" disabled>.button .wide :disabled</button>
+      </div>
+      <div class="clear-float margin-t1b1">
+        <button class="button-pri shadow">.button-pri .shadow</button>
+        <button class="button-sec shadow">.button-sec .shadow</button>
+        <button class="button-ter shadow">.button-ter .shadow</button>
+        <button class="button outline shadow">.button .shadow .outline</button>
+        <button class="button shadow" disabled>.button .shadow :disabled</button>
+      </div>
+      <div class="clear-float margin-t1b1">
+        <button class="square">.button .square</button>
+        <button class="button-pri square">.button-pri .square</button>
+        <button class="button-sec square">.button-sec .square</button>
+        <button class="button-ter square">.button-ter .square</button>
+        <button class="button outline square">.button .outline .square</button>
+        <button class="button square" disabled>.button .square :disabled</button>
+      </div>
+      <div class="clear-float margin-t1b1">
+        <button class="button-pri square shadow">.button-pri .square .shadow</button>
+        <button class="button-sec square shadow">.button-sec .square .shadow</button>
+        <button class="button-ter square shadow">.button-ter .square .shadow</button>
+        <button class="button outline square shadow">.button .outline .square .shadow </button>
+        <button class="button suqare shadow" disabled>.button .square .shadow :disabled</button>
+      </div>
+      <div class="clear-float margin-t1b1">
+          <button class="toggle active" onclick="toggleClick(this)">.toggle.active</button><button class="toggle" onclick="toggleClick(this)">.toggle</button>
+          <p class="bold">Note: please include "<a href="scripts/toggle.js" target="_blank" download>scripts/toggle.js</a>" at the end of your body tag.</p>
+      </div>
+    </div>
+    <div class="clear-float"></div>
+    <div class="padding-1">
+      <h3 id="form">Form</h3>
+      <div class="col-1of2">
+        <input type="text" value="input">
+        <input class="square" type="text" value="input .square">
+        <div class="clear-float"></div>
+        <textarea class="margin-t1" cols="45" rows="5">textarea</textarea>
+        <div class="clear-float"></div>
+        <textarea class="margin-t1 square" cols="45" rows="5">textarea .square</textarea>
+      </div>
+      <div class="col-1of2">
+        <p class="bold">Code without extra class</p>
+        <pre><code>&lt;input type="text" value="input"&gt;</code></pre>
+        <p class="bold">Use .square for hard corners</p>
+        <pre><code>&lt;input class="square" type="text" value="input .square"&gt;</code></pre>
+        <p class="bold">Text area is easy too</p>
+        <pre><code>&lt;textarea cols="45" rows="5"&gt;&lt;/textarea&gt;</code></pre>
+        <p class="bold">Use .square for hard corners</p>
+        <pre><code>&lt;textarea class="square" cols="45" rows="5"&gt;&lt;/textarea&gt;</code></pre>
+      </div>
+    </div>
+    <div class="clear-float"></div>
+    <div class="padding-1">
+      <h3 id="list">List</h3>
+      <div class="col-1of2">
+        <ul class="list">
+          <li>ul.list > li</li>
+          <li>ul.list > li</li>
+          <li class="active">ul.list > li.active</li>
+        </ul>
+      </div>
+    </div>
+    <div class="clear-float"></div>
+    <div class="padding-1">
+      <h3 id="components">Components</h3>
+      <h4>.card</h4>
+      <div class="card white-bg"></div>
+      <div class="card white-bg">
+        <div class="img-container">
+          <img src="images/img2.jpg">
+        </div>
+      </div>
+      <div class="card white-bg">
+        <div class="img-container">
+          <img src="images/img1.jpg">
+        </div>
+      </div>
+      <div class="clear-float"></div>
+      <h4>.bg-img</h4>
+      <div class="full-width height-20 bg-img">
+      </div>
+      <h4>.bg-img-fix</h4>
+      <div class="full-width height-20 bg-img-fix">
+      </div>
+      <h4>.cover</h4>
+      <div class="full-width height-20 bg-img margin-t1">
+        <div class="cover">
+          <div class="center-v">
+            <pre><code class="white-txt-d">
+            &lt;div class="full-width height-20 bg-img margin-t1"&gt;
+              &lt;div class="cover"&gt;
+                &lt;div class="center-v"&gt;
+                  &lt;h1 class="white-txt"&gt;Hello Hackers!&lt;/h1&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <h4>.bg-video</h4>
+      <div class="full-width height-40 bg-video">
+        <video autoplay loop muted poster="images/bg.jpg" id="bgvid">
+          <source src="videos/bg.webm" type="video/webm">
+          <source src="videos/bg.mp4" type="video/mp4">
+          <source src="videos/bg.ogv" type="video/ogg">
+        </video>
+        <div class="cover">
+          <div class="center-v">
+            <pre><code class="white-txt-d">
+            &lt;div class="full-width height-40 bg-video"&gt;
+              &lt;video autoplay loop muted poster="images/bg.jpg" id="bgvid"&gt;
+                &lt;source src="videos/bg.webm" type="video/webm"&gt;
+                &lt;source src="videos/bg.mp4" type="video/mp4"&gt;
+                &lt;source src="videos/bg.ogv" type="video/ogg"&gt;
+              &lt;/video&gt;
+              &lt;div class="cover"&gt;
+                &lt;div class="center-v"&gt;
+                  &lt;h1 class="white-txt"&gt;Hello Hackers!&lt;/h1&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            </code></pre>
+          </div>
+        </div>
+      </div>
+      <h4>.flash</h4>
+      <div class="flash-pri margin-b1">
+        .flash .flash-pri
+      </div>
+      <div class="flash-sec margin-b1">
+        .flash .flash-sec
+      </div>
+      <div class="flash-ter margin-b1">
+        .flash .flash-ter
+      </div>
+      <p class="bold">Flash with close button: please include "<a href="scripts/flash.js" target="_blank" download>scripts/flash.js</a>" at the end of your body tag.</p>
+      <div class="flash flash-pri margin-b1">
+        &lt;div class="flash flash-pri margin-b1"&gt;
+          &lt;button class="close" onclick="close_flash()"&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        <button class="close" onclick="close_flash()"></button>
+      </div>
+      <h4>.nav-bar</h4>
+      <nav class="nav-bar white-bg">
+        <ul class="pull-left">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Dashboard</a></li>
+        </ul>
+        <ul class="pull-right">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+        <div class="clear-float"></div>
+      </nav>
+      <nav class="nav-bar pri-bg">
+        <ul class="pull-left">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Dashboard</a></li>
+        </ul>
+        <ul class="pull-right">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+        <div class="clear-float"></div>
+      </nav>
+      <nav class="nav-bar sec-bg">
+        <ul class="pull-left">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Dashboard</a></li>
+        </ul>
+        <ul class="pull-right">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+        <div class="clear-float"></div>
+      </nav>
+      <nav class="nav-bar ter-bg">
+        <ul class="pull-left">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Dashboard</a></li>
+        </ul>
+        <ul class="pull-right">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+        <div class="clear-float"></div>
+      </nav>
+      <h4>.dropdown</h4>
+      <div class="dropdown">
+        <button class="full-width">Menu</button>
+        <ul class="white-bg-l full-width">
+          <li class="txt-center"><a href="#">Item1</a></li>
+          <li class="txt-center"><a href="#">Item2</a></li>
+          <li class="txt-center"><a href="#">Item3</a></li>
+        </ul>
+      </div>
+      <div class="clear-float"></div>
+      <div class="col-1of5">
+        <h4>.circle</h4>
+        <div class="padding-1">
+          <img class="circle" src="images/profile.png" alt="">
+        </div>
+      </div>
+      <div class="col-1of5">
+        <h4>.round</h4>
+        <div class="padding-1">
+          <img class="round" src="images/profile.png" alt="">
+        </div>
+      </div>
+      <div class="clear-float magrin-b2">
+        <div class="col-1of5">
+          <h4>.arrow-up</h4>
+          <div class="arrow-up"></div>
+        </div>
+        <div class="col-1of5">
+          <h4>.arrow-down</h4>
+          <div class="arrow-down"></div>
+        </div>
+        <div class="col-1of5">
+          <h4>.arrow-left</h4>
+          <div class="arrow-left"></div>
+        </div>
+        <div class="col-1of5">
+          <h4>.arrow-right</h4>
+          <div class="arrow-right"></div>
+        </div>
+        <div class="clear-float">
+        </div>
+      </div>
+      <h4>.info-box</h4>
+      <div class="info-box">
+        <img class="icon-m" src="images/question.png">
+        <div class="box">
+          <pre><code>
+&lt;div class="info-box"&gt;
+  &lt;img class="icon-m" src="images/question.png"&gt;
+  &lt;div class="box"&gt;
+    &lt;p&gt;Hello Hackers!&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+          </code></pre>
+        </div>
+      </div>
+      <h4>.nested-list</h4>
+      <div class="nested-list">
+        <ul class="list col-1of2">
+          <li>A
+            <ul class="list">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+          </li>
+          <li>B
+            <ul class="list">
+              <li>a</li>
+              <li>b</li>
+              <li>c</li>
+              <li>d</li>
+            </ul>
+          </li>
+          <li>C
+            <ul class="list">
+              <li>1</li>
+              <li>2</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="clear-float"></div>
+      <div class="margin-t2">
+        <h4>.crs (carousel)</h4>
+        <p class="bold">Note: please include "<a href="scripts/carousel.js" target="_blank" download>scripts/carousel.js</a>" at the end of your body tag.</p>
+        <pre><code>
+&lt;div class="crs"&gt;
+  &lt;div class="crs-img"&gt;
+    &lt;img src="images/img1.jpg"&gt;
+  &lt;/div&gt;
+  &lt;div class="crs-img"&gt;
+    &lt;img src="images/img2.jpg"&gt;
+  &lt;/div&gt;
+  &lt;div class="crs-img"&gt;
+    &lt;img src="images/img3.jpg"&gt;
+  &lt;/div&gt;
+  &lt;button class="left" onclick="slide_left(1)"&gt;&lt;&lt;/button&gt;
+  &lt;button class="right" onclick="slide_right(1)"&gt;&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="crs-thumb"&gt;
+    &lt;img class="thumb active" onclick="select_image(this, 0)" src="images/img1.jpg"&gt;
+    &lt;img class="thumb" onclick="select_image(this, 1)" src="images/img2.jpg"&gt;
+    &lt;img class="thumb" onclick="select_image(this, 2)" src="images/img3.jpg"&gt;
+    &lt;div class="clear-float"&gt;&lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+        <div class="crs">
+          <div class="crs-img">
+            <img src="images/img1.jpg">
+          </div>
+          <div class="crs-img">
+            <img src="images/img2.jpg">
+          </div>
+          <div class="crs-img">
+            <img src="images/img3.jpg">
+          </div>
+          <button class="left" onclick="slide_left(1)">&lt;</button>
+          <button class="right" onclick="slide_right(1)">&gt;</button>
+        </div>
+        <div class="crs-thumb">
+            <img class="thumb active" onclick="select_image(this, 0)" src="images/img1.jpg">
+            <img class="thumb" onclick="select_image(this, 1)" src="images/img2.jpg">
+            <img class="thumb" onclick="select_image(this, 2)" src="images/img3.jpg">
+            <div class="clear-float"></div>
+        </div>
+      </div>
+      <h4>.modal</h4>
+      <p class="bold">Note: please include "<a href="scripts/modal.js" target="_blank" download>scripts/modal.js</a>" at the end of your body tag.</p>
+      <button onclick="open_modal()">Show Modal</button>
+      <div class="modal">
+        <div class="overlay" onclick="close_modal()"></div>
+        <div class="content">
+          <pre><code>
+&lt;button onclick="open_modal()"&gt;Show Modal&lt;/button&gt;
+&lt;div class="modal"&gt;
+  &lt;div class="overlay" onclick="close_modal()"&gt;&lt;/div&gt;
+  &lt;div class="content"&gt;
+    &lt;h4&gt;Hello Hackers!&lt;/h4&gt;
+    &lt;button class="close" onclick="close_modal()"&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+          </code></pre>
+          <button class="close" onclick="close_modal()"></button>
+        </div>
+      </div>
+      <div class="clear-float"></div>
+    </div>
+    <hr>
+    <p class="txt-center light black-txt-l">Created by <a href="http://onlyhongyan.com" target="_blank">Yan Hong</a>, 2015</p>
+  </div>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-48474768-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script src="scripts/carousel.js"></script>
+  <script src="scripts/modal.js"></script>
+  <script src="scripts/flash.js"></script>
+  <script src="scripts/toggle.js"></script>
+</body>
+</html>

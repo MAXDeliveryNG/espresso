@@ -10,7 +10,17 @@
     "amd",
     "node"
   ],
-  "keywords": ["css", "sass", "style", "grid", "flat", "website", "design", "frontend", "lightweight front end"],
+  "keywords": [
+    "css",
+    "sass",
+    "style",
+    "grid",
+    "flat",
+    "website",
+    "design",
+    "frontend",
+    "lightweight front end"
+  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -20,5 +30,9 @@
     "tests"
   ],
   "dependencies": {
+    "font-awesome": "^4.6.3"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.6"
   }
 }

@@ -16,6 +16,15 @@
 
 // Forms ======================================================================
 
+// Style radios and checkboxes better
+input[type="radio"],
+input[type="checkbox"] {
+  &:checked {
+    background-color: $brand-warning;
+    color: $brand-warning;
+  }
+}
+
 .form-control,
 input {
   border-width: 2px;

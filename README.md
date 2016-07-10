@@ -9,7 +9,7 @@ Style guide and style framework for all brand solutions products at Max NG.!
 (comment out the one you do not need in main.scss)
 * variables.scss - customize variables such as color, font size, etc.
 * helpers.scss - helper classes
-* grids.scss - a grid system
+* grids.scss - a grid system, tables, typography
 * elements.scss - small components such as button, form inputs, etc.
 * components.scss - larger components such as navigation bar and dropdown, etc.
 

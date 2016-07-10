@@ -35,4 +35,11 @@
 // Transparent elements =======================================================
 .bg-transparent {
   background-color: $gray-transparent;
+  border-bottom: 2px #fff;
+}
+
+// Elements with White background ==============================================
+.bg-transparent {
+  background-color: $white;
+  border-bottom: 2px #fff;
 }

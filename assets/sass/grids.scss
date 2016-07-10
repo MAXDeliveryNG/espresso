@@ -1,166 +1,72 @@
-[class*='col-'] {
-  float:left;
+
+// Tables =====================================================================
+
+table,
+.table {
+
+  a:not(.btn) {
+    text-decoration: underline;
+  }
+
+  .dropdown-menu a {
+    text-decoration: none;
+  }
+
+  .success,
+  .warning,
+  .danger,
+  .info {
+    color: #fff;
+
+    > th > a,
+    > td > a,
+    > a {
+      color: #fff;
+    }
+  }
+
+  > thead > tr > th,
+  > tbody > tr > th,
+  > tfoot > tr > th,
+  > thead > tr > td,
+  > tbody > tr > td,
+  > tfoot > tr > td {
+    border: none;
+  }
+
+  &-bordered > thead > tr > th,
+  &-bordered > tbody > tr > th,
+  &-bordered > tfoot > tr > th,
+  &-bordered > thead > tr > td,
+  &-bordered > tbody > tr > td,
+  &-bordered > tfoot > tr > td {
+    border: 1px solid $table-border-color;
+  }
 }
 
-/* Basic Grids */
-.col-1of1 {
-  width: 100%;
-}
-.col-1of3 {
-  width: 100% / 3 * 1;
-}
-.col-2of3 {
-  width: 100% / 3 * 2;
-}
-.col-1of4 {
-  width: 100% / 4 * 1;
-}
-.col-1of2 {
-  width: 100% / 2 * 1;
-}
-.col-3of4 {
-  width: 100% / 4 * 3;
-}
-.col-1of5 {
-  width: 100% / 5 * 1;
-}
-.col-2of5 {
-  width: 100% / 5 * 2;
-}
-.col-3of5 {
-  width: 100% / 5 * 3;
-}
-.col-4of5 {
-  width: 100% / 5 * 4;
-}
-.col-1of7 {
-  width: 100% / 7 * 1;
-}
-.col-2of7 {
-  width: 100% / 7 * 2;
-}
-.col-3of7 {
-  width: 100% / 7 * 3;
-}
-.col-4of7 {
-  width: 100% / 7 * 4;
-}
-.col-5of7 {
-  width: 100% / 7 * 5;
-}
-.col-6of7 {
-  width: 100% / 7 * 6;
+// Typography =================================================================
+
+.text-primary,
+.text-primary:hover {
+  color: $brand-primary;
 }
 
-/* Gap Grids */
-.col-1of1-g {
-  width: 100% - $size-p1 * 2;
-  @include margin-lr($size-p1);
-}
-.col-1of3-g {
-  width: 100% / 3 * 1 - $size-p1 * 2;
-  @include margin-lr($size-p1);
-}
-.col-2of3-g {
-  width: 100% / 3 * 2 - $size-p1 * 2;
-  @include margin-lr($size-p1);
-}
-.col-1of4-g {
-  width: 100% / 4 * 1 - $size-p1 * 2;
-  @include margin-lr($size-p1);
-}
-.col-1of2-g {
-  width: 100% / 2 * 1 - $size-p1 * 2;
-  @include margin-lr($size-p1);
-}
-.col-3of4-g {
-  width: 100% / 4 * 3 - $size-p1 * 2;
-  @include margin-lr($size-p1);
-}
-.col-1of5-g {
-  width: 100% / 5 * 1 - $size-p1 * 2;
-  @include margin-lr($size-p1);
-}
-.col-2of5-g {
-  width: 100% / 5 * 2 - $size-p1 * 2;
-  @include margin-lr($size-p1);
-}
-.col-3of5-g {
-  width: 100% / 5 * 3 - $size-p1 * 2;
-  @include margin-lr($size-p1);
-}
-.col-4of5-g {
-  width: 100% / 5 * 4 - $size-p1 * 2;
-  @include margin-lr($size-p1);
-}
-.col-1of7-g {
-  width: 100% / 7 * 1 - $size-p1 * 2;
-  @include margin-lr($size-p1);
-}
-.col-2of7-g {
-  width: 100% / 7 * 2 - $size-p1 * 2;
-  @include margin-lr($size-p1);
-}
-.col-3of7-g {
-  width: 100% / 7 * 3 - $size-p1 * 2;
-  @include margin-lr($size-p1);
-}
-.col-4of7-g {
-  width: 100% / 7 * 4 - $size-p1 * 2;
-  @include margin-lr($size-p1);
-}
-.col-5of7-g {
-  width: 100% / 7 * 5 - $size-p1 * 2;
-  @include margin-lr($size-p1);
-}
-.col-6of7-g {
-  width: 100% / 7 * 6 - $size-p1 * 2;
-  @include margin-lr($size-p1);
+.text-success,
+.text-success:hover {
+  color: $brand-success;
 }
 
-/* Offset Grids */
-.push-1of3 {
-  margin-left: 100% / 3 * 1;
+.text-danger,
+.text-danger:hover {
+  color: $brand-danger;
 }
-.push-2of3 {
-  margin-left: 100% / 3 * 2;
+
+.text-warning,
+.text-warning:hover {
+  color: $brand-warning;
 }
-.push-1of4 {
-  margin-left: 100% / 4 * 1;
-}
-.push-3of4 {
-  margin-left: 100% / 4 * 3;
-}
-.push-1of2 {
-  margin-left: 100% / 2 * 1;
-}
-.push-1of5 {
-  margin-left: 100% / 5 * 1;
-}
-.push-2of5 {
-  margin-left: 100% / 5 * 2;
-}
-.push-3of5 {
-  margin-left: 100% / 5 * 3;
-}
-.push-4of5 {
-  margin-left: 100% / 5 * 4;
-}
-.push-1of7 {
-  margin-left: 100% / 7 * 1;
-}
-.push-2of7 {
-  margin-left: 100% / 7 * 2;
-}
-.push-3of7 {
-  margin-left: 100% / 7 * 3;
-}
-.push-4of7 {
-  margin-left: 100% / 7 * 4;
-}
-.push-5of7 {
-  margin-left: 100% / 7 * 5;
-}
-.push-6of7 {
-  margin-left: 100% / 7 * 6;
+
+.text-info,
+.text-info:hover {
+  color: $brand-info;
 }

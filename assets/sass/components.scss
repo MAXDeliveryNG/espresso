@@ -3,6 +3,7 @@
 
 .navbar {
   border-width: 0;
+  top: 0;
 
   &-default {
 
@@ -13,7 +14,7 @@
   }
 
   &-inverse {
-
+    box-shadow: 0px 4px 2px -2px $gray-light;
     .badge {
       background-color: #fff;
       color: $navbar-inverse-bg;
@@ -22,6 +23,36 @@
 
   &-brand {
     line-height: 1;
+    display: block;
+
+    img {
+      max-height: 50px;
+      height: auto;
+      width: auto;
+      max-width: auto;
+      margin-top: -15px;
+    }
+  }
+}
+
+
+@media (min-width: $grid-float-breakpoint) {
+  .navbar-left {
+    float: left !important;
+  }
+  .navbar-right {
+    float: right !important;
+    margin-right: -$navbar-padding-horizontal;
+
+    ~ .navbar-right {
+      margin-right: 0;
+    }
+  }
+  .navbar-center {
+    float: right;
+    position: relative;
+    left: -50%;
+    text-align: left;
   }
 }
 

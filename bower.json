@@ -19,7 +19,9 @@
     "website",
     "design",
     "frontend",
-    "lightweight front end"
+    "lightweight",
+    "front",
+    "end"
   ],
   "license": "MIT",
   "ignore": [
@@ -27,7 +29,8 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "assets/libs/"
   ],
   "dependencies": {
     "font-awesome": "^4.6.3",

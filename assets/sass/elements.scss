@@ -19,26 +19,30 @@
 // --------------------------------------------------
 .btn-inverse {
   &-default {
-    @include button-inverse-variant($btn-default-color, $btn-default-bg);
+    @include button-inverse-variant($btn-default-bg);
   }
   &-primary {
-    @include button-inverse-variant($btn-primary-color, $btn-primary-bg);
+    @include button-inverse-variant($btn-primary-bg);
   }
   // Success appears as green
   &-success {
-    @include button-inverse-variant($btn-success-color, $btn-success-bg);
+    @include button-inverse-variant($btn-success-bg);
   }
   // Info appears as blue-green
   &-info {
-    @include button-inverse-variant($btn-info-color, $btn-info-bg);
+    @include button-inverse-variant($btn-info-bg);
   }
   // Warning appears as gold
   &-warning {
-    @include button-inverse-variant($btn-warning-color, $btn-warning-bg);
+    @include button-inverse-variant($btn-warning-bg);
+  }
+  // White
+  &-white {
+    @include button-inverse-variant($white);
   }
   // Danger and error appear as red
   &-danger {
-    @include button-inverse-variant($btn-danger-color, $btn-danger-bg);
+    @include button-inverse-variant($btn-danger-bg);
   }
 }
 

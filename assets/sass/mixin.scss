@@ -4,31 +4,31 @@
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
 
-@mixin button-inverse-variant($color, $bgcolor) {
-  color: $color;
+@mixin button-inverse-variant($bgcolor) {
+  color: $bgcolor;
   background-color: transparent;
   border-color: $bgcolor;
   border-width: 2px;
 
   &:focus,
   &.focus {
-    color: $color;
+    color: $bgcolor;
     border-color: darken($bgcolor, 25%);
   }
   &:hover {
-    color: $color;
+    color: $bgcolor;
     border-color: darken($bgcolor, 12%);
   }
   &:active,
   &.active,
   .open > &.dropdown-toggle {
-    color: $color;
+    color: $bgcolor;
     border-color: darken($bgcolor, 12%);
 
     &:hover,
     &:focus,
     &.focus {
-      color: $color;
+      color: $bgcolor;
       border-color: darken($bgcolor, 25%);
     }
   }
